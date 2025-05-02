@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+                gold: {
+                    DEFAULT: '#D4AF37',
+                    light: '#F8E9A1',
+                    dark: '#9F7D26'
+                },
+                rich: {
+                    black: '#0A0A0A',
+                    gray: '#242424'
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +84,36 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateY(10px)'
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateY(0)'
+                    }
+                },
+                'shimmer': {
+                    '0%': {
+                        backgroundPosition: '-40rem 0'
+                    },
+                    '100%': {
+                        backgroundPosition: '40rem 0'
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.5s ease-out forwards',
+                'shimmer': 'shimmer 2s infinite linear'
+			},
+            fontFamily: {
+                montserrat: ['Montserrat', 'sans-serif'],
+                opensans: ['Open Sans', 'sans-serif']
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

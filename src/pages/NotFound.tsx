@@ -1,26 +1,23 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+
+import Layout from "@/components/layout/Layout";
+import { Link } from "react-router-dom";
+import { Home } from "lucide-react";
 
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <Layout>
+      <div className="min-h-[80vh] flex flex-col items-center justify-center px-4">
+        <h1 className="text-6xl md:text-8xl font-bold gold-gradient mb-4">404</h1>
+        <p className="text-xl md:text-2xl mb-8 text-center">Oops! The page you're looking for isn't on our map.</p>
+        <Link
+          to="/"
+          className="gold-button flex items-center gap-2"
+        >
+          <Home size={18} />
+          Return Home
+        </Link>
       </div>
-    </div>
+    </Layout>
   );
 };
 
