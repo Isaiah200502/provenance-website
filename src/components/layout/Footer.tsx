@@ -1,6 +1,6 @@
 
-import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { https://www.facebook.com/profile.php?id=100070963628190, https://www.instagram.com/provenance_coaching?igsh=MXF2c2UxZWN3ZWhpbA==, https://whatsapp.com/dl/, https://x.com/SurveyorIsaiah?t=tmeYCNYRVq2QxCQJoM_3cA&s=09 } from 'react-router-dom';
+import { Facebook, Instagram, WhatsApp, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -49,10 +49,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
             <address className="not-italic text-gray-400">
-              <p className="mb-2">123 Coaching Street</p>
-              <p className="mb-2">New York, NY 10001</p>
-              <p className="mb-2">Email: info@provenancecoaching.com</p>
-              <p>Phone: (123) 456-7890</p>
+              <p className="mb-2">Zuba,Abuja.</p>
+              <p className="mb-2">Nigeria, Lagos</p>
+              <p className="mb-2">Email: provenancecoaching01@gmail.com</p>
+              <p>Phone: 07040217367, 09133821730</p>
             </address>
           </div>
         </div>
